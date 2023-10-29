@@ -275,47 +275,4 @@
       clickable: true,
     },
   });
-});
-
-// filter app & web
-document.addEventListener("DOMContentLoaded", function () {
-  const portfolioFilters = document.getElementById("portfolio-flters");
-  const filterItems = document.querySelectorAll(".filter-item");
-
-  portfolioFilters.addEventListener("click", function (event) {
-    if (event.target.tagName === "LI") {
-      const filterValue = event.target.getAttribute("data-filter");
-      filterItems.forEach((item) => {
-        item.style.display = "none";
-        if (filterValue === "*" || item.classList.contains(filterValue)) {
-          item.style.display = "block";
-        }
-      });
-      // Tandai filter yang aktif
-      portfolioFilters.querySelectorAll("li").forEach((li) => {
-        li.classList.remove("filter-active");
-      });
-      event.target.classList.add("filter-active");
-    }
-  });
-});
-
-// Function to show the mobile menu
-function showMobileMenu() {
-  var mobileMenu = document.getElementById("mobileMenu");
-  mobileMenu.style.display = "block";
-}
-
-// Function to hide the mobile menu
-function hideMobileMenu() {
-  var mobileMenu = document.getElementById("mobileMenu");
-  mobileMenu.style.display = "none";
-}
-
-// Add a click event listener to the mobile-nav-toggle element
-var mobileNavToggle = document.querySelector(".mobile-nav-toggle");
-mobileNavToggle.addEventListener("click", showMobileMenu);
-
-// Add a click event listener to the close-mobile-menu element
-var closeMobileMenu = document.querySelector(".close-mobile-menu");
-closeMobileMenu.addEventListener("click", hideMobileMenu);
+})();
