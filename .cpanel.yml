@@ -3,5 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/java2779/public_html/kyims.me
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cr -r assets $DEPLOYPATH
-    - /bin/cr -r forms $DEPLOYPATH
+    - /bin/cp -r assets $DEPLOYPATH
+    - /bin/cp -r forms $DEPLOYPATH
