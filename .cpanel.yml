@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/java2779/public_html/Porto_Dicky
+    - export DEPLOYPATH=/home/java2779/public_html/DickyImam
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp -r assets $DEPLOYPATH
     - /bin/cp -r forms $DEPLOYPATH
